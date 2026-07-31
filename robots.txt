@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://otium.us.com/sitemap.xml
