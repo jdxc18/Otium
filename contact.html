@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Otium</title>
+<meta name="description" content="Get in touch with Otium to talk about marketing for your independent hotel or stay.">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P45D7QL0RD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P45D7QL0RD');
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="wrap">
+    <a class="logo" href="index.html">OTIUM</a>
+    <div class="navlinks">
+      <a href="focus.html">Focus</a>
+      <a href="pricing.html">Services</a>
+      <a href="why.html">Why Otium</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+
+    <form class="contact-form" action="https://formspree.io/f/mzdnqqja" method="POST" onsubmit="gtag('event', 'generate_lead', {'event_category': 'conversion', 'event_label': 'contact_form_submit'});">
+      <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off">
+      <div class="field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="cf-company">Company</label>
+        <input type="text" id="cf-company" name="company">
+      </div>
+      <div class="field">
+        <label for="cf-url">URL</label>
+        <input type="url" id="cf-url" name="url" placeholder="https://">
+      </div>
+      <div class="field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required>
+      </div>
+      <div class="field field-full">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required></textarea>
+      </div>
+      <div class="field-full">
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </div>
+    </form>
+
+    <p class="footnote">© Otium. Marketing for independent European stays.</p>
+  </div>
+</footer>
+
+</body>
+</html>
