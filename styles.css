@@ -183,6 +183,13 @@
   }
 
   /* ---------- Focus ---------- */
+  .tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--slate);
+    margin: 8px 0 0;
+  }
   .focus-grid {
     display: grid;
     grid-template-columns: 1fr;
