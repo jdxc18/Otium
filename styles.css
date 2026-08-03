@@ -236,8 +236,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    max-width: 640px;
   }
+  @media (min-width: 560px) { .focus-gallery { grid-template-columns: repeat(4, 1fr); } }
   .focus-gallery figure {
     margin: 0;
     border: 1px solid var(--line);
