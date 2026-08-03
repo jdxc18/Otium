@@ -245,6 +245,7 @@
   .focus-gallery img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
@@ -317,6 +318,7 @@
   .feature-photo img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
