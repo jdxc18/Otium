@@ -236,8 +236,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    max-width: 640px;
   }
-  @media (min-width: 760px) { .focus-gallery { grid-template-columns: repeat(4, 1fr); } }
   .focus-gallery figure {
     margin: 0;
     border: 1px solid var(--line);
@@ -245,7 +245,7 @@
   .focus-gallery img {
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
@@ -311,12 +311,13 @@
   /* ---------- Feature photo ---------- */
   .feature-photo {
     margin: 0 0 40px;
+    max-width: 440px;
     border: 1px solid var(--line);
   }
   .feature-photo img {
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 7;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
   }
 
