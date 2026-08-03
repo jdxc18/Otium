@@ -89,8 +89,31 @@
 
   /* ---------- Hero ---------- */
   .hero {
+    position: relative;
     padding: 96px 0 64px;
+    overflow: hidden;
+    isolation: isolate;
   }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(23,38,42,0.6), rgba(23,38,42,0.78));
+    z-index: -1;
+  }
+  .hero .eyebrow { color: rgba(239,237,230,0.75); }
+  .hero h1 { color: var(--paper); }
+  .hero-side { color: rgba(239,237,230,0.85); border-left-color: rgba(239,237,230,0.3); }
+  .hero .btn-ghost { border-color: var(--paper); color: var(--paper); }
+  .hero .btn-ghost:hover { border-color: var(--brass); color: var(--brass); }
   .eyebrow {
     font-family: var(--mono);
     font-size: 12px;
@@ -203,6 +226,23 @@
   }
   .focus-card .coord { display: block; margin-bottom: 14px; }
   .focus-card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+  .focus-gallery {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @media (min-width: 760px) { .focus-gallery { grid-template-columns: repeat(4, 1fr); } }
+  .focus-gallery figure {
+    margin: 0;
+    border: 1px solid var(--line);
+  }
+  .focus-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
 
   /* ---------- Pricing ---------- */
   .tiers {
@@ -261,6 +301,18 @@
     font-size: 13px;
     color: var(--slate);
     max-width: 700px;
+  }
+
+  /* ---------- Feature photo ---------- */
+  .feature-photo {
+    margin: 0 0 40px;
+    border: 1px solid var(--line);
+  }
+  .feature-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    object-fit: cover;
   }
 
   /* ---------- Why ---------- */
