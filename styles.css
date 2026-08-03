@@ -111,7 +111,6 @@
   }
   .hero .eyebrow { color: rgba(239,237,230,0.75); }
   .hero h1 { color: var(--paper); }
-  .hero-side { color: rgba(239,237,230,0.85); border-left-color: rgba(239,237,230,0.3); }
   .hero .btn-ghost { border-color: var(--paper); color: var(--paper); }
   .hero .btn-ghost:hover { border-color: var(--brass); color: var(--brass); }
   .eyebrow {
@@ -145,8 +144,8 @@
   }
   .hero-side {
     font-size: 16px;
-    color: var(--ink-soft);
-    border-left: 1px solid var(--line);
+    color: rgba(239,237,230,0.85);
+    border-left: 1px solid rgba(239,237,230,0.3);
     padding-left: 24px;
   }
   .hero-cta {
