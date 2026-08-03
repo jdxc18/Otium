@@ -115,6 +115,19 @@
 }
 </script>
 
+<!-- Analytics opt-out: visit any page once with ?optout=1 to stop sending your own traffic to GA4 (persists via localStorage regardless of IP). ?optout=0 re-enables. -->
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  if (params.has('optout')) {
+    try { localStorage.setItem('otium_ga_optout', params.get('optout') !== '0' ? '1' : '0'); } catch (e) {}
+  }
+  var disabled = false;
+  try { disabled = localStorage.getItem('otium_ga_optout') === '1'; } catch (e) {}
+  if (disabled) { window['ga-disable-G-P45D7QL0RD'] = true; }
+})();
+</script>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P45D7QL0RD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
