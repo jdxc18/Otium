@@ -5,25 +5,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Otium — Marketing for Europe's Quietly Extraordinary Stays</title>
 <meta name="description" content="Otium pairs analytics and search optimization to get independent European hotels found by American travelers — competing on quality, not OTA scale.">
+<link rel="canonical" href="https://otium.us.com/">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- Open Graph -->
+<meta property="og:site_name" content="Otium">
 <meta property="og:title" content="Otium — Marketing for Europe's Quietly Extraordinary Stays">
 <meta property="og:description" content="Otium pairs analytics and search optimization to get independent European hotels found by American travelers — competing on quality, not OTA scale.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://otium.us.com/">
+<meta property="og:image" content="https://otium.us.com/images/otium-hero-sunset.jpg">
+<meta property="og:image:alt" content="Sunset view over rooftops and rolling hills from Montepulciano, Tuscany">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Otium — Marketing for Europe's Quietly Extraordinary Stays">
+<meta name="twitter:description" content="Otium pairs analytics and search optimization to get independent European hotels found by American travelers — competing on quality, not OTA scale.">
+<meta name="twitter:image" content="https://otium.us.com/images/otium-hero-sunset.jpg">
 
 <!-- Schema.org structured data (GEO / AI-assistant discoverability practice) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Otium",
-  "description": "Otium pairs analytics and consumer insight with search optimization and targeted marketing to get independent European hotels found by an American clientele.",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Europe"
-  },
-  "serviceType": ["Marketing analytics and reporting", "Local SEO", "Brand and social media marketing", "Paid advertising management", "Website design"],
-  "priceRange": "$149-$549 per month"
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://otium.us.com/#organization",
+      "name": "Otium",
+      "url": "https://otium.us.com/",
+      "logo": "https://otium.us.com/apple-touch-icon.png",
+      "image": "https://otium.us.com/images/otium-hero-sunset.jpg",
+      "description": "Otium pairs analytics and consumer insight with search optimization and targeted marketing to get independent European hotels found by an American clientele.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Europe"
+      },
+      "serviceType": ["Marketing analytics and reporting", "Local SEO", "Brand and social media marketing", "Paid advertising management", "Website design"],
+      "priceRange": "$149-$549 per month"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://otium.us.com/#website",
+      "url": "https://otium.us.com/",
+      "name": "Otium",
+      "publisher": { "@id": "https://otium.us.com/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://otium.us.com/#webpage",
+      "url": "https://otium.us.com/",
+      "name": "Otium — Marketing for Europe's Quietly Extraordinary Stays",
+      "isPartOf": { "@id": "https://otium.us.com/#website" },
+      "about": { "@id": "https://otium.us.com/#organization" },
+      "description": "Otium pairs analytics and search optimization to get independent European hotels found by American travelers — competing on quality, not OTA scale."
+    }
+  ]
 }
 </script>
 
@@ -57,7 +97,7 @@
 <main id="top">
 
   <section class="hero">
-    <img class="hero-bg" src="images/otium-hero-sunset.jpg" alt="Sunset view over rooftops and rolling hills from Montepulciano, Tuscany">
+    <img class="hero-bg" src="images/otium-hero-sunset.jpg" alt="Sunset view over rooftops and rolling hills from Montepulciano, Tuscany" width="1125" height="2000" loading="eager" fetchpriority="high" decoding="async">
     <div class="wrap">
       <p class="eyebrow">Optimizing bookings for European stays, tailored to an American clientele.</p>
       <div class="hero-grid">
